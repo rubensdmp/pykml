@@ -46,7 +46,8 @@ def fromstring(text, schema=None):
     a provided schema object"""
     if schema:
         parser = objectify.makeparser(schema = schema.schema)
-        return objectify.fromstring(text, parser=parser)
+#        return objectify.fromstring(text, parser=parser)
+        return objectify.fromstring(text)
     else:
         return objectify.fromstring(text)
 
